@@ -3,6 +3,7 @@
 export const LEVEL_FILES = {
   1: "01-boop.js",
   2: "02-cane-bau.js",
+  3: "03-doppie.js",
 };
 
 export async function loadLevel(id) {

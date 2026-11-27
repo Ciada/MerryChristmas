@@ -36,7 +36,7 @@ export const CONTENT = {
     {
       id: 3,
       title: "Collo o colo?",
-      intro: "Scegli la parola giusta. Attento alle doppie!",
+      intro: "Scegli la parola giusta. Attento alle doppie! Ne servono 6 su 8.",
       memory: { photo: "assets/photos/doppie.jpg", caption: "Le doppie: messe e tolte a caso, con amore." },
     },
     {
@@ -119,6 +119,25 @@ export const CONTENT = {
   dogs: {
     italyLine: "Sì, in Italia facciamo BAU. Fattene una ragione.",
     wrongLines: ["Ehm… no.", "Non sono io!", "Mai sentito.", "???"],
+  },
+
+  // Livello 3 — "pic" è un emoji (oppure "mole" = disegno della Mole Antonelliana)
+  // "answer" è la parola giusta tra le due in "options". Servono "need" risposte giuste.
+  doppie: {
+    need: 6,
+    questions: [
+      { pic: "🦒", text: "La giraffa ce l'ha lunghissimo.", options: ["collo", "colo"], answer: "collo" },
+      { pic: "📎", text: "Serve per attaccare la carta.", options: ["colla", "cola"], answer: "colla" },
+      { pic: "mole", text: "Il simbolo di Torino.", options: ["molle", "mole"], answer: "mole" },
+      { pic: "❄️", text: "Serve per togliere la neve.", options: ["palla", "pala"], answer: "pala" },
+      { pic: "👴", text: "Il papà del papà.", options: ["nonno", "nono"], answer: "nonno" },
+      { pic: "💧", text: "Ho caldo, voglio bere: ho ...", options: ["sette", "sete"], answer: "sete" },
+      { pic: "💸", text: "Costa tanto, è ...", options: ["carro", "caro"], answer: "caro" },
+      { pic: "✒️", text: "Serve per scrivere.", options: ["penna", "pena"], answer: "penna" },
+    ],
+    laughs: ["ahahah di nuovo?!", "ahah, le doppie!", "ahahah no!", "ahahah amore…", "ahah, ci risiamo!"],
+    good: ["Esatto!", "Bravo!", "Perfetto!", "Sììì!"],
+    retry: "Quasi! Le doppie sono difficili… riproviamo?",
   },
 
   // Livello 1

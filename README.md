@@ -8,13 +8,13 @@ I moduli JavaScript non funzionano aprendo `index.html` con doppio clic: serve u
 Dalla cartella del progetto:
 
 ```powershell
-python -m http.server 5173
+python tools/serve.py
 ```
 
-poi apri <http://localhost:5173>. (In alternativa: `npx serve .`)
+poi apri <http://localhost:5180>. Questo server disattiva la cache, così vedi sempre l'ultima versione dei file.
 
-**Dal telefono sulla stessa Wi‑Fi:** avvia `python -m http.server 5173 --bind 0.0.0.0` e apri
-`http://<IP-del-PC>:5173` (l'IP lo trovi con `ipconfig`, voce "Indirizzo IPv4").
+**Dal telefono sulla stessa Wi‑Fi:** avvia `python tools/serve.py --phone` e apri
+`http://<IP-del-PC>:5180` (l'IP lo trovi con `ipconfig`, voce "Indirizzo IPv4").
 
 Sul PC puoi simulare il telefono: F12 → icona "dispositivo" → 390×844.
 
