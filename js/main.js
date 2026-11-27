@@ -151,4 +151,15 @@ async function playLevel(id) {
 }
 
 window.addEventListener("hashchange", route);
+
+// la mappa dipende dalla larghezza: ridisegnala se il telefono ruota
+let lastW = window.innerWidth, resizeT = null;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeT);
+  resizeT = setTimeout(() => {
+    const h = location.hash || "#/";
+    if (window.innerWidth !== lastW && (h === "#/" || h === "#")) { lastW = window.innerWidth; route(); }
+    else lastW = window.innerWidth;
+  }, 250);
+});
 route();
