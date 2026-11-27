@@ -1,0 +1,10 @@
+Metti qui le foto (jpg/png/webp). I nomi devono corrispondere a quelli in content.js.
+Nomi già previsti:
+
+  boop.jpg  bau.jpg  doppie.jpg  chiodi.jpg  africa.jpg  gazpacho.jpg  biliardo.jpg
+  rc.jpg  montagna.jpg  nivolet.jpg  foglie.jpg  liguria-1.jpg  liguria-2.jpg  liguria-3.jpg
+  teatro.jpg  laurea.jpg  ceresole.jpg
+
+Consiglio: ridimensionale a circa 1200 px sul lato lungo (pesano meno e si caricano subito sul telefono).
+Le card mostrano le foto in formato verticale 4:5 (vengono ritagliate al centro).
+Se una foto manca, il gioco mostra un segnaposto.
